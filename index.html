@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <h1>MyWeather</h1>
+        <div id="cities">
+            <button class="city" onclick="alert('Switching to Chicago')">Chicago</button>
+            <button class="city" onclick="alert('Switching to Bloomington')">Bloomington</button>
+            <button class="city" onclick="alert('Switching to Eugene')">Eugene</button>
+        </div>
+    </div>
+
+    <div id="title">
+        <h2>Seattle</h2>
+        <div id="rightTitle">
+            <h5>Show Temperature in</h5>
+            <select id="units" onchange="chooseUnit(this)" name="units">
+                <option value="farenheit">°F</option>
+                <option value="celcius">°C</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div id="week">
+        <div class="day">
+            <h2>Today</h2>
+            <img src="some_rain.png" alt="Some Rain">
+            <h4>some rain</h4>
+            <div class="temps">
+                <h3 class="high" id="todayHigh">0</h3>
+                <h3 class="low" id="todayLow">1</h3>
+            </div>
+        </div>
+        <div class="day">
+            <h2>Tomorrow</h2>
+            <img src="some_rain.png" alt="Some Rain">
+            <h4>some rain</h4>
+            <div class="temps">
+                <h3 class="high" id="tomorrowHigh">2</h3>
+                <h3 class="low" id="tomorrowLow">3</h3>
+            </div>
+        </div>
+        <div class="day">
+            <h2>Wednesday</h2>
+            <img src="some_rain.png" alt="Some Rain">
+            <h4>some rain</h4>
+            <div class="temps">
+                <h3 class="high" id="wedHigh">4</h3>
+                <h3 class="low" id="wedLow">5</h3>
+            </div>
+        </div>
+        <div class="day">
+            <h2>Thursday</h2>
+            <img src="some_rain.png" alt="Some Rain">
+            <h4>some rain</h4>
+            <div class="temps">
+                <h3 class="high" id="thursHigh">6</h3>
+                <h3 class="low" id="thursLow">7</h3>
+            </div>
+        </div>
+        <div class="day">
+            <h2>Friday</h2>
+            <img src="some_rain.png" alt="Some Rain">
+            <h4>some rain</h4>
+            <div class="temps">
+                <h3 class="high" id="friHigh">8</h3>
+                <h3 class="low" id="friLow">9</h3>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="cookie">
+        <div id="cookieAlert">
+            <img src="cookie.png" alt="cookie">
+            <div>
+                <h2>Stop! Cookie Time!</h2>
+                <h4>We use cookies. Get over it. It's 2021. <a href="#">Read More...</a></h4>
+            </div>
+            <button id="cookieButton" onclick="hide(this)">I Accept</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

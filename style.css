@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: oldlace;
+}
+
+/* NAV */
+#nav {
+    background-color: rgb(160, 255, 207);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#cities {
+    display: flex;
+}
+.city {
+    margin: 20px;
+    color: midnightblue;
+    background-color: rgb(160, 255, 207);
+    border: none;
+    font-size: 125%;
+}
+
+/* title */
+#title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 209, 201);
+}
+#title h2 {
+    margin-left: 20px;
+}
+#rightTitle {
+    display: flex;
+    margin: 20px;
+}
+#units {
+    margin-left: 15px;
+}
+
+/* week */
+
+#week {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.day {
+    background-color: palegoldenrod;
+    height: 400px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+.day img {
+    width: 150px;
+    margin-bottom: 30px;
+}
+.temps {
+    display: flex;
+}
+.high {
+    color: sienna;
+    margin: 30px;
+}
+.low {
+    color: slateblue;
+    margin: 30px;
+}
+
+/* cookies */
+
+#cookieAlert {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: slategray;
+    position: fixed;
+    bottom: 10px;
+    left: 25vw;
+    right: 25vw;
+}
+#cookieButton {
+    background-color: wheat;
+}
+
