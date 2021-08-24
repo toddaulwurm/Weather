@@ -5,25 +5,23 @@ function hide(element) {
     cookieOut.innerHTML = "";
     element.remove();
 }
-
-var temps = [22,11,33,22,44,33,55,44,66,55];
-var week = {
-    "todayHigh": temps[0],
-    "todayLow": temps[1],
-    "tomorrowHigh": temps[2],
-    "tomorrowLow": temps[3],
-    "wedHigh": temps[4],
-    "wedLow": temps[5],
-    "thursHigh": temps[6],
-    "thursLow": temps[7],
-    "friHigh": temps[8],
-    "friLow": temps[9],
+function c2f(temp) {
+    return Math.round(9 / 5 * temp + 32);
 }
-var tempHolders = document.querySelector("#friHigh");
-console.log(tempHolders.innerHTML);
-console.log(wedHigh)
 
-function fahrenheitFunction(){
-    console.log(temps[9]);
+function f2c(temp) {
+    return Math.round(5 / 9 * (temp - 32));
 }
-fahrenheitFunction();
+
+function convert(element) {
+    console.log(element.value);
+    for(var i=1; i<11; i++) {
+        var tempSpan = document.querySelector("#temp" + i);
+        var tempVal = parseInt(tempSpan.innerText);
+        if(element.value == "°C") {
+            tempSpan.innerText = f2c(tempVal);
+        } else {
+            tempSpan.innerText = c2f(tempVal);
+        }
+    }
+}
